@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.clearBtn{
+  margin-right: 25px;
+}
+
+.badge{
+  margin-right: 25px;
+}
+
+.myForm{
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  margin: auto;
+  border: 1px solid black;
+}
