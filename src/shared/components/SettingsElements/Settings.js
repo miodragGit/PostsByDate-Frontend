@@ -95,7 +95,7 @@ const Settings = props => {
             <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group>
             <Form.Label>Post Limit (per page):</Form.Label>
-            <input type='number' value={pageLimit} placeholder="Enter number" name='pageLimit' ref={register}></input>
+            <input type='number' defaultValue={pageLimit} placeholder="Enter number" name='pageLimit' ref={register}></input>
         </Form.Group>
 
         <Form.Group>
@@ -106,7 +106,7 @@ const Settings = props => {
         <Form.Group>
             <Form.Label>Category:</Form.Label>
             <br />
-            <select selected={selectedCat} value={category} onChange={cat => setSelectedCat(cat)} name='category' ref={register}>
+            <select selected={selectedCat} defaultValue={category} onChange={cat => setSelectedCat(cat)} name='category' ref={register}>
                 <option value='1'>Choose category</option>
                 {categories.categories.map((category, idx) => {
                     console.log(category);
